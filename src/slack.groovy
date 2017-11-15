@@ -1,6 +1,6 @@
 import groovy.json.JsonOutput
 
-def slackUpdate(slack, message, emoji, colour, channel, username) {
+def notify(slack, message, emoji, colour, channel, username) {
     def json = JsonOutput.toJson([text: component,
             channel: channel,
             username: username,
